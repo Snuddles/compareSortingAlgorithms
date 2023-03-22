@@ -20,7 +20,7 @@ void mergeSort(int pData[], int l, int r)
 		/* create temp arrays */
 		int *L = (int*) malloc(n1*sizeof(int));
 		int *R = (int*) malloc(n2*sizeof(int));
-		extraMemoryAllocated += (n1 * sizeof(L)) + (n2 *sizeof(R));
+		extraMemoryAllocated += (sizeof(L)) + (sizeof(R));
 		/* Copy data to temp arrays L[] and R[] */
 		for (i = 0; i < n1; i++)
 		L[i] = pData[l + i];
